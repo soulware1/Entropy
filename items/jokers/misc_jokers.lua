@@ -153,7 +153,7 @@ local dr_sunshine = {
     eternal_compat = true,
     pos = { x = 4, y = 1 },
     atlas = "jokers",
-    pools = { ["Sunny"] = true, },
+    pools = { ["Sunny"] = true, ["Music"] = true },
     demicoloncompat = true,
     loc_vars = function(self, q, card)
         if Entropy.config.asc_power_tutorial then q[#q+1] = {set = "Other", key = "asc_power_tutorial"} end
@@ -1691,6 +1691,7 @@ local memento_mori = {
     order = 32,
     object_type = "Joker",
     key = "memento_mori",
+    pools = {Music = true},
     rarity = 2,
     cost = 5,
     dependencies = {
@@ -5401,6 +5402,7 @@ local spiral_of_ants = {
             }
         }
     end,
+    pools = {Music = true},
     config = {
         last_card = 9999,
         chips = 0,
